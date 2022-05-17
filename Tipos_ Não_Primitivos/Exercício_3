@@ -1,0 +1,6 @@
+#Escreva um programa que retorne o maior e o menor número de uma lista.
+lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(f'A lista é composta dos seguintes números: {lista}')
+maiorValor = max(lista)
+menorValor = min(lista)
+print(f'O maior valor da lista em questão é {maiorValor} e o menor valor da lista é {menorValor}.')
