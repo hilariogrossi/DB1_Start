@@ -1,0 +1,5 @@
+#Escreva um programa que ordene em ordem crescente uma lista de tuplas informadas, pelo último item da tupla
+
+tupla = [(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]
+tupla.sort(key=lambda x: x[1], reverse=False)
+print(tupla)
