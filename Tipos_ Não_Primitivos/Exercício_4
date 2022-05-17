@@ -1,0 +1,5 @@
+# Escreva um programa que conte o número de caracteres de uma string.
+from collections import Counter
+string1 = 'contador de caracteres de uma string.'
+contador = dict(Counter(string1))
+print(contador)
