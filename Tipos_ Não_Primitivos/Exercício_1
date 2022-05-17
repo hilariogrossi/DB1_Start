@@ -1,3 +1,4 @@
+#Programa que soma todos os itens de uma lista.
 lista = ['Aprender', 'Python', 'é', 'Maravilhoso']
 print(lista)
 del lista[:]
