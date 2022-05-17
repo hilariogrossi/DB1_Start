@@ -1,0 +1,4 @@
+lista = ['Aprender', 'Python', 'é', 'Maravilhoso']
+print(lista)
+del lista[:]
+print(lista)
