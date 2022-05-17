@@ -1,0 +1,26 @@
+#Escreva um programa que leia chaves e valores, crie um dicionário, e depois, verifique se uma chave informada existe em um dicionário.
+
+print('-=' * 20)
+print('{:^40}'.format('Vamos construir um dicionário!'))
+print('-=' * 20)
+
+dicionario = {}
+
+while True:
+    item2 = (input('Digite o nome de um PRODUTO [DIGITE "Q" PARA SAIR]: ')).upper().strip()
+    if item2 == 'Q':
+        break
+    item1 = float(input('Digite um valor para o produto: '))
+    dicionario.update({item2: item1})
+
+print('-=' * 30)
+print(dicionario)
+print('-=' * 30)
+
+existe_item = str(input('Digite o PRODUTO a ser pesquisado: ')).upper().strip()
+print('-=' * 30)
+
+if existe_item in dicionario:
+    print(f'O item desejado {existe_item} exite no {dicionario}.')
+else:
+    print(f'O item desejado {existe_item} NÃO EXITE no dicionário ==> {dicionario}.')
