@@ -1,0 +1,23 @@
+#Escreva um programa que remova itens duplicados de uma lista.
+lista = [0, 1, 2, 3, 4, 5,  6, 7, 8, 9, 10,
+         10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+print('*' * 80)
+print(lista)
+print('{:^80}'.format('ESSA É A LISTA PRINCIPAL. COM NÚMEROS REPETIDOS!'))
+print('*' * 80)
+print()
+print('*' * 80)
+print('*' * 80)
+
+x = 0
+while x < len(lista) - 1:
+    y = x + 1
+    while y < len(lista):
+        if lista[x] == lista[y]:
+            lista.pop(y)
+        y += 1
+    x += 1
+
+print(f'ESSA É A LISTA SEM OS NÚMEROS REPETIDOS: {lista}.')
+print('*' * 80)
+print('*' * 80)
