@@ -1,0 +1,12 @@
+#Escreva um programa que verifique se uma lista está vazia ou não.
+
+lista = ['Hilário']
+
+if len(lista) > 0:
+    print('=' * 40)
+    print('{:^40}'.format('A lista NÃO ESTÁ vazia.'))
+    print('=' * 40)
+else:
+    print('=' * 40)
+    print('{:^40}'.format('A lista ESTÁ vazia.'))
+    print('=' * 40)
