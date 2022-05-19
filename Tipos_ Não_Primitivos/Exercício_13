@@ -1,0 +1,5 @@
+#Escreva um programa que clone ou copie uma lista.
+
+lista_1 = ['Hilário', 'Grossi', 'de', 'Oliveira.']
+lista_2 = lista_1.copy()
+print(lista_2)
