@@ -1,0 +1,19 @@
+# Escreva uma função que imprima as primeiras n linhas do triângulo de pascal.
+
+from math import factorial
+
+
+def piramide_pascal():
+    n = int(input('Digite o número para a construção da Pirâmide de Pascal: '))
+
+    for x in range(n):
+        for y in range((n - x) + 1):
+            print(end=" ")
+
+        for y in range(x + 1):
+            print(factorial(x) // (factorial(y) * factorial(x - y)), end=" ")
+
+        print()
+
+
+piramide_pascal()
