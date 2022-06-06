@@ -1,0 +1,32 @@
+# Escreva um programa que execute uma função que receba um número informado no console como parâmetro e verifique se o número informado é primo ou não.
+
+def numero_primo():
+    contador = 1
+    contador_de_divisiveis = 0
+    numero = int(input('Digite um número para saber se é PRIMO: '))
+
+    while True:
+        if numero <= 0:
+            print('=' * 60)
+            print('{:^60}'.format('NÚMERO INVÁLIDO. Por favor digite um número POSITIVO.'))
+            print('=' * 60)
+            break
+
+        for check_number in range(1, (numero + 1)):
+            if numero % contador == 0:
+                contador_de_divisiveis += 1
+            contador += 1
+
+        if contador_de_divisiveis == 2:
+            print('=' * 50)
+            print('{:^50}'.format('É UM NÚMERO PRIMO.'))
+            print('=' * 50)
+            break
+        else:
+            print('=' * 50)
+            print('{:^50}'.format('NÃO É um número primo.'))
+            print('=' * 50)
+            break
+
+
+numero_primo()
