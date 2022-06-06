@@ -1,4 +1,4 @@
-# Escreva uma função que imprima as primeiras n linhas do triângulo de pascal.
+# Escreva uma função que imprima as primeiras n linhas do triângulo de pascal. 
 
 from math import factorial
 
