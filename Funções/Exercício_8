@@ -1,0 +1,21 @@
+# Escreva um programa que execute uma função que valide se o número informado é um número perfeito ou não.
+
+def numero_perfeito():
+    numero = int(input('Digite um número para saber se é ou não PERFEITO: '))
+    somatorio = 0
+
+    for num in range(1, numero):
+        if numero % num == 0:
+            somatorio += num
+
+    if somatorio == numero:
+        print('=' * 60)
+        print(f'O número digitado {numero} É um número PERFEITO.')
+        print('=' * 60)
+    else:
+        print('=' * 60)
+        print(f'O número digitado {numero} NÃO É um número perfeito.')
+        print('=' * 60)
+
+
+numero_perfeito()
