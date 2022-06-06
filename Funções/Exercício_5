@@ -1,0 +1,11 @@
+# Escreva um programa que execute uma função que calcule o fatorial de um número passado por parâmetro.
+from math import factorial
+
+
+def fatorial():
+    resultado = factorial(numero)
+    print(f'O resultado do fatorial do número {numero}! é igual a {resultado}.')
+
+
+numero = int(input('Digite o número a ser fatorado: '))
+fatorial()
