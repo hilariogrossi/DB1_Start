@@ -3,11 +3,9 @@
 from math import factorial
 
 
-def piramide_pascal():
-    n = int(input('Digite o número para a construção da Pirâmide de Pascal: '))
-
-    for x in range(n):
-        for y in range((n - x) + 1):
+def piramide_pascal(numero):
+    for x in range(numero):
+        for y in range((numero - x) + 1):
             print(end=" ")
 
         for y in range(x + 1):
@@ -16,4 +14,4 @@ def piramide_pascal():
         print()
 
 
-piramide_pascal()
+piramide_pascal(numero = int(input('Digite o número para a construção da Pirâmide de Pascal: ')))
