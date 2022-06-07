@@ -2,10 +2,9 @@
 from math import factorial
 
 
-def fatorial():
+def fatorial(numero):
     resultado = factorial(numero)
     print(f'O resultado do fatorial do número {numero}! é igual a {resultado}.')
 
 
-numero = int(input('Digite o número a ser fatorado: '))
-fatorial()
+fatorial(numero = int(input('Digite o número a ser fatorado: ')))
