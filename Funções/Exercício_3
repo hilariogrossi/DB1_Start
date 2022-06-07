@@ -1,11 +1,13 @@
 # Escreva um programa que execute uma função que multiplique todos os números de uma lista passada por parâmetro.
 
-def multiplica_itens_lista():
+def multiplica_itens_lista(lista):
     multiplica = 1
     for numero in lista:
         multiplica *= numero
     print(f'A multiplicação dos números da lista {lista} é {multiplica}.')
 
 
-lista = [1, 2, 3, 4, 5]
-multiplica_itens_lista()
+multiplica_itens_lista([1, 2, 3, 4, 5])
+multiplica_itens_lista([8, 500, 15, 150, 102])
+multiplica_itens_lista([-1, -2, -3010,-250, -360])
+multiplica_itens_lista([7, 1, 2, 3, 4, 5, 6])
