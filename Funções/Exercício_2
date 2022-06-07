@@ -1,11 +1,13 @@
 # Escreva um programa que execute uma função que some todos os itens de uma lista passada por parâmetro.
 
-def soma_itens_lista():
+def soma_itens_lista(lista):
     soma = 0
     for numero in lista:
         soma += numero
     print(f'A soma da lista {lista} é {soma}.')
 
 
-lista = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-soma_itens_lista()
+soma_itens_lista([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+soma_itens_lista([8, 500, 15, 150, 102])
+soma_itens_lista([-1, -2, -3010,-250, -360])
+soma_itens_lista([7, 1, 2, 3, 4, 5, 6])
