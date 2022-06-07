@@ -1,8 +1,7 @@
 # Escreva um programa que execute uma função que retorne o inverso de uma string passada por parâmetro.
 
-def inverso():
-    frase = str(input('Digite uma frase para ser invertida: '))
+def inverso(frase):
     print(f'O inverso da frase {frase} é {frase[::-1]}.')
 
 
-inverso()
+inverso(frase = str(input('Digite uma frase para ser invertida: ')))
