@@ -1,7 +1,6 @@
 # Escreva um programa que execute uma função que encontre o maior número de uma lista passada por parâmetro.
 
-def maior_numero():
-    lista = [5, 7, 1, 10, 9, 5]
+def maior_numero(lista):
     maior = 0
     for m in lista:
         if maior == 0:
@@ -12,4 +11,7 @@ def maior_numero():
     print(f'O maior número da lista {lista} é {maior}.')
 
 
-maior_numero()
+maior_numero([5, 7, 1, 10, 9, 5])
+maior_numero([8, 500, 15, 150, 102])
+maior_numero([-1, -2, -3010,-250, -360])
+maior_numero([7, 1, 2, 3, 4, 5, 6])
