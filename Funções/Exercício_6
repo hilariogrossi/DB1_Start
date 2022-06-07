@@ -1,6 +1,6 @@
 # Escreva um programa que execute uma função que conte o número de letras maiúsculas e minúsculas de um texto e que ao final, chame outra função para imprimir o resultado.
 
-def contadora():
+def contadora(frase):
     print('=' * 50)
     contador_maiúscula = contador_minúscula = 0
     for maiúscula in frase:
@@ -14,3 +14,5 @@ def contadora():
     print(f'A quantidade de letras MINÚSCULAS na frase é {contador_minúscula}.')
     print('=' * 50)
 
+
+contadora(frase = str(input('Digite uma frase com letras maiúsculas e minúsculas: ')))
